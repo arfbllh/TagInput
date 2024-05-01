@@ -2,8 +2,12 @@
 # TagInput
 
 TagInput is a React component designed to enhance user experience by allowing users to add and remove tags dynamically. It's perfect for fields that require tag or keyword input, such as in forms for entering interests, skills, categories, etc. This component includes an autocomplete feature that suggests items based on the input, making it easier for users to find and select tags.
+
+
 ![](public/ss2.png)
+
 ![](public/ss3.png)
+
 ## Features
 
 - **Dynamic Tagging**: Add or remove tags with ease.
