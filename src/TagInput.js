@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './TagInput.css';  // Make sure your CSS file is properly linked
+import './TagInput.css';  
 
 const TagInput = () => {
     const [input, setInput] = useState('');
@@ -7,7 +7,7 @@ const TagInput = () => {
     const [matches, setMatches] = useState([]);
     const inputRef = useRef(null);
 
-    const data = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape"];
+    const data = ["Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape", "Honeydew", "Kiwi", "Lemon", "Mango", "Nectarine", "Orange", "Papaya", "Quince", "Raspberry", "Strawberry", "Tangerine", "Ugli fruit", "Vanilla bean", "Watermelon", "Xigua", "Yellow passion fruit", "Zucchini"];
 
     useEffect(() => {
         if (inputRef.current) {
