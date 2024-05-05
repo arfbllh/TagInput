@@ -15,6 +15,11 @@ TagInput is a React component designed to enhance user experience by allowing us
 - **Fully Customizable**: Style it according to your needs.
 - **Responsive**: Works well on both desktop and mobile devices.
 
+## Props
+The TagInput component accepts the following props to configure its behavior:
+
+- **onTagsChange (function):** Callback function that is called whenever the tags change. It receives the updated array of tags as its argument.
+- **canEdit (boolean):** Determines whether the tag input is editable. Defaults to true if not specified. This is a optional.
 
 ### Installation and Running Instructions
 
@@ -49,8 +54,16 @@ import React from 'react';
 import TagInput from './path/to/TagInput'; // Adjust the import path as necessary
 
 function App() {
+  const [tags, setTags] = useState([]);
+  const [canEdit, setCanEdit] = useState(false);
+
+  useEffect(() => {
+    //Do something with your tags.
+    console.log(tags);
+  }, [tags]);
+
   return (
-    <TagInput />
+    <TagInput onTagsChange = {setTags} />
   );
 }
 

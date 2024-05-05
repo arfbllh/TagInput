@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './TagInput.css';  
 
-const TagInput = ({onTagsChange, canEdit = true}) => {
+const TagInput = ({onTagsChange = null, canEdit = true}) => {
     const [input, setInput] = useState('');
     const [selectedItems, setSelectedItems] = useState([]);
     const [matches, setMatches] = useState([]);
